@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-textPrimary font-sans antialiased;
+}
+
+::selection {
+  background-color: rgba(0, 209, 255, 0.3);
+  color: #ffffff;
+}
+
+a {
+  @apply text-textPrimary transition-colors;
+}
+
+a:hover {
+  color: var(--accent-glow, #00D1FF);
+}
+
+.prose-invert {
+  color: inherit;
+}
